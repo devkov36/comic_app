@@ -1,0 +1,135 @@
+{% extends "comic_app/base.html" %}
+{% load static %}
+
+{% block contenido %}
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Comic fan site</h6>
+                  <h4>Conoce a tus <br>&amp; peronsajes favoritos</h4>
+                  <p>Enciclopedia elaborada por autenticos fans sobre cada personaje, su biografía, mejores eventos y batallas.</p>
+                  <a href="/personsajes/" class="filled-button">Personajes</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Coleccionables</h6>
+                  <h4>Encuentra<br>&amp;y vende </h4>
+                  <p>Aquí podras adquirir artículos coleccionables así como promocionar los tuyos.</p>
+                  <a href="/tarjetas/" class="filled-button">Coleccionables</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>Encuentra los próximos eventos</h6>
+                  <h4>Busca o pública un evento</h4>
+                  <p>Eventos, convenciones, conferencias sobre comics</p>
+                  <a href="/eventos/" class="filled-button">Eventos</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>No tienes usuario?</h4>
+            <span>Crea tu usuario y participa en foros, promociona tus coleccionables, publica tus eventos</span>
+          </div>
+          <div class="col-md-4">
+            <a href="/login/" class="border-button">Ingresa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Principales<em>Editoriales</em></h2>
+              <span>Las editoriales más populares</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'comic_app/images/marvel.png' %}" alt="">
+              <div class="down-content">
+                <h4>Marvel</h4>
+                <p>Xmen, Thor, Spiderman , Hulk, Iron Man, Capitan América.....</p>
+                <a href="" class="filled-button">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'comic_app/images/DC_Comics_logo.png' %}" alt="">
+              <div class="down-content">
+                <h4>DC Comics</h4>
+                <p>Batman, Superman, Flash, Linterna verde.....</p>
+                <a href="" class="filled-button">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{% static 'comic_app/images/Dark_Horse_Comics_logo.png' %}" alt="" height="380" width="300">
+              <div class="down-content">
+                <h4>Dark horse</h4>
+                <p>Sin city, virus, Alien vs. predator, Hellboy</p>
+                <a href="" class="filled-button">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="more-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{% static 'comic_app/images/comic-book-company.png' %}" alt="" height="500">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Quienes somos</span>
+                    <h2>Conoce más sobre nuestro sitio</em></h2>
+                    <p>Comic app es un sitio intersado en que el publico conozca sobre comic a través de las publicaciones de otros usuarios así como la promoción de artículos coleccionables</p>
+                    <a href="/acerca-de" class="filled-button">Acerca de nosotros</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    
+{% endblock %}
+
