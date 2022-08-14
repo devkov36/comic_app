@@ -1186,12 +1186,13 @@ footer .contact-form button.filled-button:hover {
 
 .page-heading {
 	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
+	background-image: url('../images/comic-about.png');
+	opacity(0.1);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 230px 0px 150px 0px;
-	color: #fff;
+	color: #000;
 }
 
 .page-heading h1 {
@@ -1206,7 +1207,8 @@ footer .contact-form button.filled-button:hover {
 	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #000;
+	background-color: rgb(255,255,255,.75);
 	display: block;
 }
 

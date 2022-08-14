@@ -35,6 +35,7 @@ class Personaje(models.Model):
         ("M", "Mutante"),
         ("H", "Humano"),
         ("E", "Extraterrestre"),
+        ("S", "Super Humano"),
         ("O", "Otro"),
     ]
     genero = models.CharField(max_length=1, choices=GENERO)
@@ -61,8 +62,10 @@ class Revista(models.Model):
                   serialize = False, 
                   verbose_name ='ID'
                 )
-    descripcion=models.TextField(blank=False)
-    
+    descripcion=models.TextField(blank=False,default="")
+    titulo=models.TextField(blank=False,default="")
+    serie=models.TextField(blank=False, null=False, default="")
+    miembros=models.CharField(max_length=500, null=True, blank=True, default="")
     COMPANIA = [
         ("Marvel", "Marvel"),
         ("DC", "DC Comics"),
@@ -70,7 +73,11 @@ class Revista(models.Model):
         ("IDW", "IDW Publishing"),
     ]
     compania= models.CharField(max_length=45, choices=COMPANIA, null=True, blank=True)
-    anio=models.IntegerField(null=False, blank=False)
+    anio=models.IntegerField(null=False, blank=False , default=0)
+    numero=models.IntegerField(null=False, blank=False, default=0)
+    volumen=models.IntegerField(null=False, blank=False, default=0)
+    imagen=models.TextField(blank=False, null=False, default="")
+
 
 class Tarjeta(models.Model):
     """ Define la tabla Tarjeta """
