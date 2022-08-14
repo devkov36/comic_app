@@ -22,6 +22,10 @@ def login(request):
 def registro(request):
     """ Vista o función que atiende la url GET /acerca-de/ """
     return render(request, "comic_app/registro.html")
+def compania(request):
+    """ Vista o función que atiende la url GET /acerca-de/ """
+    return render(request, "comic_app/compania.html")
+
 def comic(request):
     """ Vista o función que atiende la url GET /acerca-de/ """
     revistas_all = Revista.objects.all()
